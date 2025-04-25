@@ -1,4 +1,11 @@
 def delete_at(arr, index):
+    """
+    Delete an element from the array at the specified index.
+
+    :param arr: List of elements to delete from
+    :param index: Index of the element to delete
+    :return: New list with the element at the specified index removed
+    """
     if index >= len(arr):
         return "Invalid index"
     return arr[:index] + arr[index+1:]
